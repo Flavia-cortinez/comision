@@ -1,3 +1,164 @@
-h1{
-    color: red;
+*{
+    background-color: lightslategray;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background: steelblue;
+    width: 90%;
+    justify-content: space-around;
+    flex-direction: row;
+    
+}
+  
+
+header{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header .logo{
+    color: white;
+    font-size: 30px;
+}
+header .logo a {
+    color:white;
+    text-decoration: none;
+    line-height: 50px;
+
+}
+
+header .logo img{
+    width: 50px;
+    vertical-align: top;
+}
+
+header nav{
+ 
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header nav a {
+    background-color: antiquewhite;
+    color: rgb(29, 71, 109);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    flex-grow:1;
+
+}
+header nav a:hover{
+    background-color: rgb(211, 163, 129);
+}
+
+main{
+    padding: 20px;
+    background-color: rgb(154, 126, 180);
+    flex: 1 1 80%;
+    display: flex;
+
+}
+section{
+   padding: 20px;
+    background-color: rgb(216, 219, 29);
+    border: 5px;
+    flex-wrap: wrap;
+    flex:0 0 20% ;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+
+aside{
+    section{
+        padding: 20px;
+         background-color: wheat;
+         border: 5px;
+         flex-wrap: wrap;
+         flex:0 0 20% ;
+         justify-content: flex-start;
+         flex-direction: column;
+     
+     }
+}
+
+
+
+footer{
+    background-color: bisque;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+   
+
+}
+
+footer.links{
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+footer .links a{
+    flex-grow: 1;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    
+
+}
+footer .links a:hover{
+    background-color: aquamarine;
+
+}
+
+@media screen and (max-width: 866px) {
+    .container{
+        flex-direction: column;
+    }
+    header{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header nav{
+        width: 100%;
+    }
+    aside{
+        flex-direction: row;
+        flex: 0;
+
+    }
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    padding: 40px;
+    background-color: aqua;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.grid-container > div{
+    text-align: center;
+    height: 200 px;
+    padding: 50px;
+    border: solid;
+}
+.imagen{
+    width: 150px;
 }
