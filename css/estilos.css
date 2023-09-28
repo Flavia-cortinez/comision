@@ -1,21 +1,18 @@
 *{
-    background-color: lightslategray;
     padding: 0;
+    margin: 00px;
+    text-decoration: none;
+    list-style: none;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    background: steelblue;
-    width: 90%;
-    justify-content: space-around;
-    flex-direction: row;
-    
+.container{
+    max-width: 1700px;
+    margin: 0 auto;
 }
-  
 
-header{
-    width: 100%;
+
+header {
+    background-color: rgb(133, 164, 196);
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -23,142 +20,148 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
 }
-header .logo{
-    color: white;
-    font-size: 30px;
-}
+
+
 header .logo a {
-    color:white;
+    color: white;
     text-decoration: none;
     line-height: 50px;
+    background-color: rgb(133, 164, 196);
+    font-size: 30px;
 
 }
 
-header .logo img{
-    width: 50px;
+header .logo img {
+    width: 70px;
     vertical-align: top;
+
 }
 
-header nav{
- 
-    width: 40%;
+header nav {
+
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    background-color: rgb(133, 164, 196);
+
 }
 
 header nav a {
-    background-color: antiquewhite;
-    color: rgb(29, 71, 109);
     text-align: center;
     text-decoration: none;
     padding: 10px;
-    flex-grow:1;
+    flex-grow: 1;
+    background-color: rgb(133, 164, 196);
 
-}
-header nav a:hover{
-    background-color: rgb(211, 163, 129);
-}
-
-main{
-    padding: 20px;
-    background-color: rgb(154, 126, 180);
-    flex: 1 1 80%;
-    display: flex;
-
-}
-section{
-   padding: 20px;
-    background-color: rgb(216, 219, 29);
-    border: 5px;
-    flex-wrap: wrap;
-    flex:0 0 20% ;
-    justify-content: flex-start;
-    flex-direction: column;
 
 }
 
-aside{
-    section{
-        padding: 20px;
-         background-color: wheat;
-         border: 5px;
-         flex-wrap: wrap;
-         flex:0 0 20% ;
-         justify-content: flex-start;
-         flex-direction: column;
-     
-     }
+header nav a:hover {
+    background-color: rgb(211, 163, 129); 
+}
+
+.animacion{
+    background-color: aqua;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.grid-container{
+
+    border: 2px solid yellow;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2;
+    grid-template-areas: "left contenido";
+    
+}
+
+.left{
+    grid-area: left;
+    border: solid;
+    background-color: brown;
+    width: 200px;
+    height: 500px;
+
+}
+
+.contenido{
+    grid-area: contenido;
+    width: 1100px;
+    border: 2px solid;
 }
 
 
 
-footer{
-    background-color: bisque;
+.grid-container-2{
+    border: 2px solid white;
+    display: grid;
+    width: 100%;
+    grid-template-columns:3;
+    grid-template-areas: "derecha centro izquierda";
+    justify-content: space-around;
+}
+
+footer {
+    /* background-color: bisque; */
     width: 100%;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-   
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.699);
+    background-color: rgb(133, 164, 196);
+
 
 }
 
-footer.links{
-    background-color: blueviolet;
+footer.links {
+    /* background-color: blueviolet; */
     display: flex;
     flex-wrap: wrap;
-    
+    background-color: rgb(133, 164, 196);
+
+
 }
 
-footer .links a{
+footer .links a {
     flex-grow: 1;
     padding: 10px;
     display: inline-block;
     text-align: center;
     text-decoration: none;
+    background-color: rgb(133, 164, 196);
+
     
 
+
 }
-footer .links a:hover{
-    background-color: aquamarine;
+
+footer .links a:hover {
+     background-color: aquamarine; 
+
 
 }
 
 @media screen and (max-width: 866px) {
-    .container{
+    .container {
         flex-direction: column;
     }
-    header{
+
+    header {
         flex-direction: column;
         padding: 0;
     }
 
-    header nav{
+    header nav {
         width: 100%;
     }
-    aside{
+
+    aside {
         flex-direction: row;
         flex: 0;
-
+    background-color: rgb(133, 164, 196);
     }
 }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    padding: 40px;
-    background-color: aqua;
-    justify-content: space-around;
-    width: 100%;
-
-}
-
-.grid-container > div{
-    text-align: center;
-    height: 200 px;
-    padding: 50px;
-    border: solid;
-}
-.imagen{
-    width: 150px;
-}
